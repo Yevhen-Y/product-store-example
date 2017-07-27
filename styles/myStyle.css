@@ -5,8 +5,8 @@ body {
     }
     
         header {
-        background-color: #4BBF6B;
-        color: #ccffdd;
+        background-color: #a0cdd9;
+        color: #edf5f8;
         margin: 0;
         padding: 10px;
         text-align: center;
@@ -74,4 +74,8 @@ margin-top: 10px;
     color: #ea4848;
     font-family: Arial;
       font-weight: bolder;
+}
+
+fieldset {
+  margin-top: 20px;
 }
