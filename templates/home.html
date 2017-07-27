@@ -1,0 +1,14 @@
+<div ng-controller="homeCtrl" >
+<div class="newItemButton">
+	<a href="#/createItem" class="btn btn-success pull-right">New item...</a>
+	</div>
+<div ng-repeat="product in newProductList" class="productContent">
+<a href="#/home/{{newProductList[$index].title}}">
+<h4 class="productTitle">{{product.title}}</h4>
+<div class="productContentImg">
+<img src="{{product.pictureURL}}">
+</div></a><br>
+</div>
+</div>
+
+

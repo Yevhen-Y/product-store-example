@@ -1,0 +1,13 @@
+<div ng-controler='productDetailCtrl'  class="productDetail">
+<h3>{{newProductList[0].title}}</h3>
+<hr>
+<a href="#/home" class="btn btn-info pull-right" role="button" id="Home" >Home <span class="glyphicon glyphicon-home"></span></a>
+<a href="#/home" class="btn btn-danger pull-right" role="button" ng-click="deleteProduct()" id="delProductBtn" >Delete product <span class="glyphicon glyphicon glyphicon-remove"></span></a>
+<a href="#/editProduct/{{newProductList[0].title}}" class="btn btn-primary pull-right" role="button" ng-click="editProduct()" id="editProductBtn" >Edit product  <span class="glyphicon glyphicon-pencil"></span></a>
+
+<div class="productDetailImgContainer">
+	<img src="{{newProductList[0].pictureURL}}" alt="product image" class="productDetailImg">
+</div>
+    <p class="productDetailPrice">Price: {{newProductList[0].price}}</p>
+	<p class="productDetailDescription">{{newProductList[0].description}}</p>
+</div>
